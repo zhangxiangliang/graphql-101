@@ -6,7 +6,8 @@
   "author": "ZHANGXIANGLIANG <326277403@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js --exec babel-node --presets env,stage-0"
+    "dev": "nodemon index.js --exec babel-node --presets env,stage-0",
+    "db": "json-server --watch ./database/db.json --port 3300"
   },
   "dependencies": {
     "express": "^4.16.3"
@@ -15,6 +16,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
+    "json-server": "^0.12.1",
     "nodemon": "^1.17.3"
   }
 }
