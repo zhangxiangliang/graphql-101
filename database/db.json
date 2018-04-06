@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "GraphQL 学习日记",
+      "content": "GraphQL 是一个 API Query Langurage",
+      "author": 1
+    },
+    {
+      "id": 2,
+      "title": "GraphQL 项目初始化",
+      "content": "使用 express 来搭建一个演示文件",
+      "author": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "张萌萌"
+    },
+    {
+      "id": 2,
+      "name": "张糖糖"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "author": 2,
+      "content": "一直想尝试一下"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "author": 1,
+      "content": "非常好"
+    }
+  ]
+}
