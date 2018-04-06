@@ -1,0 +1,20 @@
+{
+  "name": "graphql-101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zhangxiangliang/graphql-101.git",
+  "author": "ZHANGXIANGLIANG <326277403@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js --exec babel-node --presets env,stage-0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.17.3"
+  }
+}
