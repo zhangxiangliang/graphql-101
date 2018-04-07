@@ -3,10 +3,9 @@ import {
   GraphQLString,
   GraphQLList
 } from 'graphql'
-import config from '../config'
+import { API_BASE } from '../config'
 import axios from 'axios'
 
-const { API_BASE } = config
 const name = 'PostType'
 
 const fields = {
