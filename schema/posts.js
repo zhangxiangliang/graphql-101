@@ -14,11 +14,21 @@ const fields = {
   content: { type: GraphQLString },
 }
 
-const type = new GraphQLObjectType({ name, fields });
+const type = new GraphQLObjectType({ name, fields })
 
-export default {
+export const posts = {
   type: new GraphQLList(type),
   resolve: () => axios
     .get(`${ API_BASE }/posts`)
-    .then(response => response.data),
+    .then(response => response.data)
+}
+
+const args = {id: { type: GraphQLString }}
+
+export const post = {
+  type,
+  args,
+  resolve: (obj, args, context) => axios
+    .get(`${ API_BASE }/posts/${args.id}`)
+    .then(response => response.data)
 }

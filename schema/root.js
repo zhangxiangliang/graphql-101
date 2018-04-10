@@ -1,8 +1,12 @@
 import { GraphQLObjectType } from 'graphql'
-import posts from './posts'
+import { posts, post } from './posts'
 import greeting from './greeting'
 
 export default new GraphQLObjectType({
   name: 'QueryRoot',
-  fields: { posts, greeting },
-});
+  fields: {
+    post,
+    posts,
+    greeting,
+  },
+})
