@@ -1,6 +1,6 @@
 import { GraphQLSchema } from 'graphql'
-import root from './root'
+import query from './query'
 
 export default new GraphQLSchema({
-  query: root
+  query,
 })
